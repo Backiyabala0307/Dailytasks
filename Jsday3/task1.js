@@ -1,4 +1,4 @@
-//compare two JS objects
+
 
 let obj1 = { name: "person1", age: 5 };
 
