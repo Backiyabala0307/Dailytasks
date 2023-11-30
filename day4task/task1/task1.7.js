@@ -1,41 +1,41 @@
 //remove duplicates in an array using anonymous function
-let a=[1,4,4,5,7,1,99,33,33];
+let array=[1,4,4,5,7,1,99,33,33,1];
 let duplicate=[];
 
 let find = function(){
 
- for(let i=0;i<=a.length-1;i++){
+ for(let i=0;i<array.length;i++){
     
-    for(let j=i+1;j<=a.length-1;j++){
+    for(let j=i+1;j<array.length;j++){
 
-        if(a[i]==a[j]){
-         duplicate.push(a.splice(j,1));   
+        if(array[i]==array[j]){
+             duplicate.push(array.splice(j,1));  
+                
          } 
-    }
+     }
 
-}
+    } return true;
 
 } 
 find();
-console.log(a.filter(n=> !duplicate.includes(n)));
-
+console.log(array.filter(find));
 
 //remove duplicates in an array using IIFE function
 
-let a = [1, 4, 4, 5, 7, 1, 99, 33, 33];
+let array = [1, 4, 4, 5, 7, 1, 99, 33, 33,1];
 let duplicate = [];
 ( function(){
 
- for(let i=0;i<=a.length-1;i++){
+ for(let i=0;i<=array.length-1;i++){
     
-    for(let j=i+1;j<=a.length-1;j++){
+    for(let j=i+1;j<=array.length-1;j++){
 
-        if(a[i]==a[j]){
-         duplicate.push(a.splice(j,1));   
+        if(array[i]==array[j]){
+          duplicate.push(array.splice(j,1));   
          } 
     }
 
-}
+    } 
 
 }) ();
-console.log(a.filter(n=> !duplicate.includes(n)));
+console.log(array.filter(n=> !duplicate.includes(n)));

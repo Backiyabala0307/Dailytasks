@@ -1,15 +1,35 @@
 //rortate an array by k times using anonymous function
 
-let a = [1, 2, 3, 4, 5];
-let key = 5;
+let array = [1, 2, 3, 4, 5];
+let key = 3;
+let rotated_array;
 
-for (let i = 1; i <= 5; i++){
+let reverse = function () {
+    let item = array.shift();
+    array.push(item);
+    return array;
+
+}
+for (let i = 1; i <= key; i++){
+   rotated_array= reverse();
+   
+}
+console.log(rotated_array);
+
+
+
+// //rortate an array by k times using IIFE function
+
+let array = [1, 2, 3, 4, 5];
+let key = 3;
+
+for (let i = 1; i <= key; i++) {
     
-    let reverse = function (a) {
-        a[0].shift();
-        
+    (function () {
+        let item = array.shift();
+        array.push(item);
+        return array;
 
+    })();
 }
-
-
-}
+console.log(array);

@@ -1,30 +1,32 @@
 //return the median of two same length arrays using anonymous function
-let a1=[1,2,3,4];
-let a2=[10,12,14,16];
-let c=a1.concat(a2);
+let array1=[1,2,3,4];
+let array2=[10,12,14,16];
+let Array=array1.concat(array2);
 
-let i = (c.length / 2) - 1;
+let Length= (Array.length / 2) - 1;
 
 
-let median= function(i){
-    let c1=c.slice(i,-i);
-    result=c1.reduceRight((a,b)=>a+b)/2;
-    return result;
+let median= function(item){
+    let Array1=Array.slice(item,-item);
+    return result=Array1.reduceRight((a,b)=>a+b)/2;
+   
 }
-result=median(i);
-console.log(result);
+
+console.log(median(Length));
 
 
 //return the median of two same length arrays using IIFE function
-let a1 = [1, 2, 3, 4];
-let a2 = [10, 12, 14, 16];
-let c = a1.concat(a2);
-let i = (c.length / 2) - 1;
+let array1 = [1, 2, 3, 4];
+let array2 = [10, 12, 14, 16];
+let Array = array1.concat(array2);
 
+let Length = (Array.length / 2) - 1;
+let result;
 
-(function (i) {
-    let c1 = c.slice(i, -i);
-    result = c1.reduceRight((a, b) => a + b) / 2;
-    return result;
-})(i);
+(function (item) {
+    let Array1 = Array.slice(item, -item);
+    return result = Array1.reduceRight((a, b) => a + b) / 2;
+
+})((Length));
+
 console.log(result);

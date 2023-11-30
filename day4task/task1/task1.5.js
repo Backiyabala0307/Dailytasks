@@ -1,53 +1,53 @@
 //return all the palindromes in an array using anonymous function
-let a=["amma","appa","23","99"];
-reverse_a=[];
+let array=["racecar","radar","123","989"];
+reverse_array=[];
 result=[];
 
-function reverse(x){
+function reverse(item){
       
-   reverse_a.push( x.split('').reverse().join(''));
+   reverse_array.push( item.split('').reverse().join(''));
 }
 
-let palindrome=function(x,y){ 
+let palindrome=function(item1,item2){ 
     
 
-    if(x==y){
-        result.push(x);
+    if(item1==item2){
+        result.push(item1);
     }
 
 }
 
-for(let i in a){
-    reverse(a[i]);
-    palindrome(a[i],reverse_a[i]);
+for(let i in array){
+    reverse(array[i]);
+    palindrome(array[i],reverse_array[i]);
 }
 
 console.log(result);
 
 
 //return all the palindromes in an array using IIFE function
-let a=["amma","appa","23","99"];
-reverse_a=[];
-result=[];
+let array=["racecar","radar","123","989"];
+reverse_array=[];
+palindrome=[];
 
 
-function reverse(x){
+function reverse(item){
       
-   reverse_a.push( x.split('').reverse().join(''));
+   reverse_array.push( item.split('').reverse().join(''));
 }
 
-for(let i in a){
-    reverse(a[i]);
+for(let i in array){
+    reverse(array[i]);
 
-    (function(x,y){
+    (function(item1,item2){
     
 
-         if(x==y){
-            result.push(x);
+         if(item1==item2){
+            palindrome.push(item1);
          }
-    })(a[i],reverse_a[i]);
+    })(array[i],reverse_array[i]);
 
 }
 
-console.log(result);
+console.log(palindrome);
 

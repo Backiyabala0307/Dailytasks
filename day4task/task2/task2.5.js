@@ -1,27 +1,25 @@
 //return all the palindromes in an array using arrow  function
-let a = ["amma", "appa", "23", "99"];
-reverse_a = [];
+let array = ["racecar", "radar", "123", "989"];
+reverse_array = [];
 result = [];
 
-function reverse(x) {
+function reverse(item) {
 
-    reverse_a.push(x.split('').reverse().join(''));
+    reverse_array.push(item.split('').reverse().join(''));
 }
 
+let palindrome = (item1, item2)=> {
 
 
-let palindrome = (x, y) => {
-
-
-    if (x == y) {
-        result.push(x);
+    if (item1 == item2) {
+        result.push(item1);
     }
 
 }
 
-for (let i in a) {
-    reverse(a[i]);
-    palindrome(a[i], reverse_a[i]);
+for (let i in array) {
+    reverse(array[i]);
+    palindrome(array[i], reverse_array[i]);
 }
 
 console.log(result);
