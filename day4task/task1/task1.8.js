@@ -18,7 +18,7 @@ console.log(rotated_array);
 
 
 
-// //rortate an array by k times using IIFE function
+////rortate an array by k times using IIFE function
 
 let array = [1, 2, 3, 4, 5];
 let key = 3;
