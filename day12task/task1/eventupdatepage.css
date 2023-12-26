@@ -1,0 +1,27 @@
+label {
+    
+     text-align: right;
+}
+.dropdown-toggle{
+     background-color: white;
+     color:black;
+     
+}
+.image-container{
+     display:flex;
+     text-align: center;
+     justify-content: center;
+}
+
+@media(min-width:520px){
+main{
+  display:flex;
+  flex-direction:row;
+}
+.image-container{
+     flex-direction:column;
+     text-align:center;
+     justify-content:space-around;
+
+}
+}
