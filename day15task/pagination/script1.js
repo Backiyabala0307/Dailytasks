@@ -27,7 +27,7 @@ let pagination=document.createElement('pagination');
     let a=document.createElement('a');
     a.setAttribute('type','button');
     a.setAttribute('target','_blank');
-    a.setAttribute('href','https://gist.githubusercontent.com/rvsp/add40254aa126f045837fa5b51f47f1f/raw/4d724bfabf4cce7379a386e23bef6576ab99a2f9/pagination.json');
+    a.setAttribute('href','https://gist.githubusercontent.com/rvsp/add40254aa126f045837fa5b51f47f1f/raw/4d724bfabf4cce7379a386e23bef6576ab99a2f9/pagination.json?');
     a.textContent='Previous';
     div1.append(a);
 

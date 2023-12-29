@@ -1,0 +1,32 @@
+h1,p{
+    color:blueviolet;
+    text-align: center;
+    margin:2%
+}
+form,.table{
+    border:1px dashed darkgoldenrod;
+    background-color: aquamarine;
+    padding:2% 3% 4%;
+    color:blue;
+    font-style: oblique;
+}
+button{
+    border-radius:5px;
+    border-color:red;
+    color:white;
+    background-color: brown;
+}
+.right{
+    text-align:right;
+}
+.table {
+    border: 3px solid darkgoldenrod;
+    border-style: inset;
+    border-collapse:initial;
+    font-style: oblique;
+}
+
+
+
+
+
