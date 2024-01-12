@@ -1,0 +1,20 @@
+#countriesContainer{
+    padding:20px;
+    background: linear-gradient(to top right,rgb(71, 18, 216),rgba(11, 159, 212, 0.649));
+}
+.card{
+    margin:10px;
+    background: linear-gradient(to right,lightgrey,rgb(108, 97, 97));
+}
+
+*{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+.card-header{
+    color:white;
+    font-family:'Times New Roman', Times, serif;
+    background-color:black;
+
+}
