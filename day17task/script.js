@@ -52,7 +52,7 @@
             let button = document.createElement('button');
             button.classList.add('btn', 'btn-primary');
             button.innerText = 'Click for Weather';
-            button.addEventListener('onClick', getweather());
+            button.addEventListener('Click', getweather());
 
             async function getweather(){
                
