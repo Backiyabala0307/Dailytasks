@@ -1,6 +1,14 @@
-#button{
-    background-color: rgb(9, 107, 169);
-    border-radius: 20px;
-    color:white;
-    padding: 1% 15%;
+.col{
+    display:block;
+    padding:20px;
+    margin:10px 15px;
+    background-color: white;
+    border-radius: 10px;
+}
+h1,h6,button{
+    text-align: center;
+}
+h6{
+    opacity: 0.5;
+    font-size: x-small;
 }

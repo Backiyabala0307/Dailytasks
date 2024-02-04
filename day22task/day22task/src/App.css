@@ -1,16 +1,6 @@
+.row{
+    margin:50px;
+    background: linear-gradient(to top right, rgb(12, 38, 238), lightblue); 
+   }
 
-h1,h6{
-  text-align: center;
-}
-h6{
-  opacity:0.5;
-}
 
-.container{
-  padding: 1% 4%;
-  background: linear-gradient(to right,rgb(9, 116, 182), lightblue);
-}
-.cardContainer{
-  background-color: white;
-  padding:5%;
-}

@@ -1,18 +1,22 @@
 import React from 'react'
-import './Card.css'
+import Listitem from './Listitem'
+import "./Card.css"
 
-function Card() {
-  let list = ['Single User', '50GB Storage', 'Unlimited Public Projects',
-    'Community Access', 'Unlimited Private Projects', 'Dedicated Phone Support',
-    'Free Subdomain', 'Monthly Status Reports'];
+function Card({list, heading, months, features}) {
+  
   return (
-    <div>
+    <div className="col">
+      <h6>{heading}</h6>
+      <h1>${months}/month</h1>
+      <hr></hr>
       <ul>
-        {list.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
+        
+        {list.map((item, index) => 
+          <Listitem item={item} index={index} features={features} />
+        
+        )}
       </ul>
-      <button id="button">BUTTON</button>
+      <button className="disabled rounded-pill mx-auto col-12 btn btn-primary">BUTTON</button>
     </div>
   )
 }
