@@ -1,0 +1,30 @@
+
+.getJokeButton{
+    border:1px solid green;
+    color:white;
+}
+.jokeText{
+    font-family:sans-serif;
+    color:blueviolet;   
+}
+.jokeContainer {
+    border: 1px solid green;
+    background-color:limegreen ;
+    text-align: center;
+    justify-content: center;
+}
+.container{
+    display:inline-block;
+    text-align: center;
+    justify-content: space-around;
+    height: fit-content;
+    width:fit-content;
+    margin:20% 25%; 
+}
+.h1{
+    color:magenta;
+    font-style: oblique;
+}
+body{
+    background-color:lightcyan ;
+}

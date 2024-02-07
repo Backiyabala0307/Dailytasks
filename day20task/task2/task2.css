@@ -1,0 +1,21 @@
+.body{
+    display:block;
+    text-align: center;
+    justify-content: center;
+    background-color:blanchedalmond;
+}
+
+.Catimage{
+    height:300px;
+    width: 300px;
+    border:2px solid yellowgreen
+}
+.getCatButton{
+    margin:10px;
+    padding:2%;
+    background-color: blue;
+    color:white; 
+}
+.h1{
+    color:blueviolet;
+}
