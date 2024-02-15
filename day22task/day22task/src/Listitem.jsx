@@ -14,7 +14,6 @@ function Listitem({ item, index, features }) {
     <div className='tobedisable'>
       <li key={index}>{'✘ ' + item}</li> 
     </div>
-
     )
   }
 
